@@ -1,12 +1,12 @@
 <?php
-namespace Coetrappers\CoetrappersMediaSync;
+namespace Codetrappers\CodetrappersMediaSync;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class CoetrappersMediaSyncPlugin {
-	const OPTION_KEY = 'coetrappers-media-sync_settings';
+class CodetrappersMediaSyncPlugin {
+	const OPTION_KEY = 'codetrappers-media-sync_settings';
 
 	public function boot() {
 		add_action( 'init', array( $this, 'register_post_meta' ) );
@@ -17,7 +17,7 @@ class CoetrappersMediaSyncPlugin {
 	public function register_post_meta() {
 		register_post_meta(
 			'',
-			'_coetrappers-media-sync_status',
+			'_codetrappers-media-sync_status',
 			array(
 				'show_in_rest'      => true,
 				'single'            => true,
@@ -63,7 +63,7 @@ class CoetrappersMediaSyncPlugin {
 
 		$screen = function_exists( 'get_current_screen' ) ? get_current_screen() : null;
 
-		if ( ! $screen || 'settings_page_coetrappers-media-sync' === $screen->id ) {
+		if ( ! $screen || 'settings_page_codetrappers-media-sync' === $screen->id ) {
 			return;
 		}
 
@@ -75,7 +75,7 @@ class CoetrappersMediaSyncPlugin {
 
 		printf(
 			'<div class="notice notice-info"><p>%s</p></div>',
-			esc_html__( 'Coetrappers Media Sync starter is active. Extend the bootstrap logic in includes/class-coetrappers-media-sync.php.', 'coetrappers-media-sync' )
+			esc_html__( 'Codetrappers Media Sync starter is active. Extend the bootstrap logic in includes/class-codetrappers-media-sync.php.', 'codetrappers-media-sync' )
 		);
 	}
 }

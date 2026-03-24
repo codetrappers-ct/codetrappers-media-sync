@@ -1,12 +1,12 @@
-# Coetrappers Media Sync
+# Codetrappers Media Sync
 
-`coetrappers-media-sync` is a wordpress plugin for the Coetrappers project set.
+`codetrappers-media-sync` is a wordpress plugin for the Codetrappers project set.
 Starter plugin for syncing cloud-hosted media metadata into WordPress.
 The codebase is scaffolded to be a clean starting point, not a complete production feature.
 
 ## Project Summary
 
-- Slug: `coetrappers-media-sync`
+- Slug: `codetrappers-media-sync`
 - Type: WordPress plugin
 - Focus: media, sync, assets
 
@@ -32,8 +32,8 @@ The codebase is scaffolded to be a clean starting point, not a complete producti
 
 ## How To Extend It
 
-- Activate `coetrappers-media-sync` from the Plugins screen.
-- Use `coetrappers-media-sync.php` as the primary bootstrap file for extension work.
+- Activate `codetrappers-media-sync` from the Plugins screen.
+- Use `codetrappers-media-sync.php` as the primary bootstrap file for extension work.
 - Keep feature logic inside dedicated classes rather than expanding the root file.
 
 ## Development Notes

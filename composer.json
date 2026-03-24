@@ -1,5 +1,5 @@
 {
-  "name": "coetrappers/coetrappers-media-sync",
+  "name": "codetrappers/codetrappers-media-sync",
   "description": "Starter plugin for syncing cloud-hosted media metadata into WordPress.",
   "type": "wordpress-plugin",
   "license": "GPL-2.0-or-later",
@@ -8,7 +8,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Coetrappers\\\\CoetrappersMediaSync\\\\": "includes/"
+      "Codetrappers\\\\CodetrappersMediaSync\\\\": "includes/"
     }
   }
 }
